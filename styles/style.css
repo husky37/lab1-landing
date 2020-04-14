@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: Arial;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(73, 73, 73);
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -22,7 +22,7 @@ body {
     padding: 0 90px;
 }
 
-.logo, .button, .header_wrapper__item a, .header_wrapper__phone {
+.logo, .button {
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
 }
 
@@ -56,7 +56,6 @@ body {
 .header_wrapper__list {
     list-style: none;
     display: flex;
-    font-family: Arial;
 }
 
 .header_wrapper__list__item:not(:last-child) {
@@ -101,9 +100,13 @@ body {
     right: 0;
 }
 
-.section-top__wrapper h1 {
+.subtitle {
     margin: 0;
     font-family: 'Yeseva One', cursive, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.section-top__wrapper h1 {
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -137,4 +140,105 @@ body {
     width: 207px;
     height: 51px;
     margin-left: 20px;
+}
+
+ /*-------- project section --------- */
+
+ .section-projects__wrapper {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 1440px;
+    height: 1074px;
+    background-color: black;
+    margin: 0 auto;
+ }
+
+ .projects-list {
+    max-width: 1440px;
+    margin-left: 600px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+ }
+
+.projects-list li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.projects-list li:not(:first-child) {
+    margin-left: 61px;
+}
+
+.projects-list a {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #E3B873;
+ }
+
+ .projects__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+ .subtitle_h2, .subtitle_h3 {
+    color: #E3B873;
+ }
+
+.completed_projects__wrapper .subtitle_h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+}
+
+.completed_projects__wrapper .subtitle_h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.project_desciption {
+    width: 442px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px; }
+
+.completed_projects__wrapper {
+    margin-right: 75px;
+}
+
+.project_parameters__wrapper {
+    width: 442px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project_param {
+    width: 200px;
+    height: 120px;
+}
+
+.param_descript {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
 }
