@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(73, 73, 73);
+    background-color: white;
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
 }
 
@@ -58,6 +58,13 @@ body {
     display: flex;
 }
 
+@media screen and (max-width: 1200px) {
+    .header_wrapper__list {
+        display: none;
+    }
+}
+
+
 .header_wrapper__list__item:not(:last-child) {
     margin-right: 47px;
 }
@@ -103,6 +110,8 @@ body {
 .subtitle {
     margin: 0;
     font-family: 'Yeseva One', cursive, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -241,4 +250,215 @@ body {
     font-weight: normal;
     font-size: 13px;
     line-height: 21px;
+}
+
+
+/* --- section online control ---  */
+
+.section-online-control {
+    margin: 0 auto;
+}
+
+.control__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -330px;
+}
+
+.control__wrapper h3 {
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.img-camera {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.img-camera * {
+    margin: 0 5px;
+}
+
+.control-img {
+    margin-bottom: 65px;
+}
+
+.control__wrapper .paragraph {
+    width: 680px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 780px;
+    
+}
+
+.form-control p {
+    margin: 30px auto;
+}
+
+.fieldset-form {
+    border: none;
+}
+
+.form-label {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.form-input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    width: 231px;
+    line-height: 25px;
+    outline: none;
+}
+
+.form-input::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
+.button-control {
+    width: 200px;
+    height: 51px;
+}
+
+.checkbox-personal-data {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkmark+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.checkmark+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #E3B873;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-color: #E3B873;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+/* ---------- section types of repair ----------- */
+
+.section-repair {
+    margin: 147px auto 0;
+    max-width: 1440px;
+}
+
+.repair__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.repair__wrapper .subtitle_h3 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #181818;
+    margin-bottom: 5px;
+}
+
+.img-repair {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.img-repair * {
+    margin: 0 10px;
+}
+
+.gallery {
+    display: flex;
+    
+}
+
+.gallery-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-item img {
+    margin: 0 15px;
+}
+
+.repair-container {
+    position: relative;
+    width: 330px;
+    height: 286px;
+    background-color: #FFFFFF;
+    padding-top: 25px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    margin-top: -127px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.subtitle-repair {
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    text-transform: none;
+    margin-left: 30px;
+}
+
+.repair-list {
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.repair-cost {
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    padding: 17px 18px;
+    position: relative;
+    margin-top: -30px;
+    margin-left: -103px;
+}
+
+.repair-cost .subtitle_h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
 }
